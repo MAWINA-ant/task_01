@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<label for="first">Первое число:</label><br>						
+	<input type="text" id="first"></input><br><br>
+	<label for="second">Второе число:</label><br>
+	<input type="text" id="second"></input><br><br>
+	<input type="button" value="Сложить" onclick="add();"></input>
+	
+	<script>
+		function add() {
+			var a = parseInt(document.getElementById('first').value);
+			var b = parseInt(document.getElementById('second').value);
+ 
+			if (isNaN(a)==true) a=0;
+			if (isNaN(b)==true) b=0;
+ 
+			var c = a + b;
+			
+			alert("Результат: \n" + c)
+		}
+	</script>
+</html>
